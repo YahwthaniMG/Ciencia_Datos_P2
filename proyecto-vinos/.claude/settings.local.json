@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree /F \"C:\\Users\\moral\\Desktop\\Especialidad\\Ciencia_Datos_P2\\proyecto-vinos\\app\")",
+      "Bash(dir /S /B \"C:\\Users\\moral\\Desktop\\Especialidad\\Ciencia_Datos_P2\\proyecto-vinos\\app\")",
+      "Bash(dir /S /B \"C:\\Users\\moral\\Desktop\\Especialidad\\Ciencia_Datos_P2\\proyecto-vinos\\components\")",
+      "Bash(dir /S /B \"C:\\Users\\moral\\Desktop\\Especialidad\\Ciencia_Datos_P2\\proyecto-vinos\\public\")",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(chcp 65001)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

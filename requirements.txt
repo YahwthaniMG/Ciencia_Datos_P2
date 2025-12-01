@@ -1,0 +1,190 @@
+Necesito crear un sitio web para mi proyecto de análisis de datos sobre vinos y maridajes, 
+que se desplegará en Vercel. El proyecto debe tener la siguiente estructura:
+
+CONTEXTO DEL PROYECTO:
+- Análisis de 2 datasets: Wine Quality Red (1,599 vinos) y Wine Food Pairings (34,933 maridajes)
+- Tengo 24 archivos de visualización (10 PNG, 11 HTML interactivos, 3 animaciones)
+- Los archivos están en diferentes carpetas según su fase
+- Necesito una página web profesional, moderna y responsive
+
+REQUISITOS TÉCNICOS:
+
+1. STACK TECNOLÓGICO:
+   - Next.js 14+ con App Router
+   - TypeScript
+   - Tailwind CSS
+   - Componentes shadcn/ui para UI moderna
+   - Responsive design (mobile-first)
+   - Dark mode opcional
+
+2. ESTRUCTURA DE CARPETAS:
+proyecto-vinos/
+├── app/
+│   ├── page.tsx (home)
+│   ├── layout.tsx
+│   └── sections/
+│       ├── introduccion/page.tsx
+│       ├── fase1/page.tsx
+│       ├── correlaciones/page.tsx
+│       ├── seaborn/page.tsx
+│       ├── geografia/page.tsx
+│       ├── recomendacion/page.tsx
+│       ├── animaciones/page.tsx
+│       ├── analisis-integrado/page.tsx
+│       └── conclusiones/page.tsx
+├── public/
+│   ├── images/
+│   │   ├── 01_scatter.png
+│   │   ├── 02_pie.png
+│   │   └── ... (todos los PNG)
+│   └── interactive/
+│       ├── mapa_cuisines_mundial.html
+│       ├── sistema_recomendacion_interactivo.html
+│       └── ... (todos los HTML)
+├── components/
+│   ├── Navigation.tsx
+│   ├── ImageViewer.tsx
+│   ├── InteractiveEmbed.tsx
+│   ├── DataTable.tsx
+│   └── CodeReference.tsx
+└── lib/
+└── data.ts (metadata de las gráficas)
+3. NAVEGACIÓN:
+   - Sidebar fijo en desktop con todas las secciones
+   - Hamburger menu en mobile
+   - Breadcrumbs en cada página
+   - Botones "Anterior" y "Siguiente" al final de cada sección
+   - Índice flotante en páginas largas
+
+4. COMPONENTES CLAVE:
+
+   A) ImageViewer:
+      - Lazy loading de imágenes
+      - Click para zoom/lightbox
+      - Descripción debajo de cada imagen
+      - Referencia al código fuente (notebook + sección)
+      - Botón de descarga
+
+   B) InteractiveEmbed:
+      - Iframe responsive para archivos HTML
+      - Altura adaptable
+      - Loading state
+      - Fullscreen button
+
+   C) DataTable:
+      - Tablas responsivas con scroll horizontal
+      - Sorting por columnas
+      - Estilo consistente
+
+   D) CodeReference:
+      - Badge que indica notebook + sección
+      - Link a GitHub cuando esté disponible
+
+5. CONTENIDO POR SECCIÓN:
+
+   SECCIÓN 1 - INTRODUCCIÓN:
+   - Hero section con título y subtítulo
+   - Descripción de ambos datasets
+   - Objetivos del proyecto
+   - Tecnologías utilizadas
+   - Imagen: dashboard_completo_matplotlib.png (preview)
+
+   SECCIÓN 2 - FASE 1 (Análisis Exploratorio):
+   - Subsección: Descripción de datos
+     * Tablas con estadísticas básicas
+     * Imagen: 02_pie.png
+     * Imagen: 07_histograma.png
+   - Subsección: Detección de outliers
+     * Texto explicativo
+     * Imagen: 08_boxplot.png
+   - Subsección: Visualizaciones básicas
+     * Imagen: 01_scatter.png
+
+   SECCIÓN 3 - CORRELACIONES:
+   - Texto sobre correlaciones principales
+   - Imagen: 04_heatmap.png
+   - Imagen: seaborn_heatmap.png
+   - Imagen: 03_line.png
+   - Lista de correlaciones positivas/negativas
+
+   SECCIÓN 4 - ANÁLISIS CON SEABORN:
+   - Imagen: seaborn_pairplot.png
+   - Imagen: seaborn_jointplot.png
+   - Imagen: seaborn_violinplots.png
+   - Imagen: 09_violin.png
+   - Imagen: seaborn_catplot.png
+
+   SECCIÓN 5 - ANÁLISIS GEOGRÁFICO:
+   - HTML interactivo: mapa_cuisines_mundial.html
+   - HTML interactivo: distribucion_regional.html
+   - Imagen: 06_barras_horizontales.png
+   - Tabla de estadísticas por región
+
+   SECCIÓN 6 - SISTEMA DE RECOMENDACIÓN:
+   - HTML interactivo: sistema_recomendacion_interactivo.html
+   - HTML interactivo: top_comidas_variedad_vinos.html
+   - Texto explicativo del sistema
+
+   SECCIÓN 7 - CATEGORÍAS DE VINO:
+   - Imagen: 05_barras_apiladas.png
+   - HTML interactivo: distribucion_categorias_vino.html
+   - Estadísticas de distribución
+
+   SECCIÓN 8 - ANIMACIONES:
+   - HTML interactivo: animacion_distribucion_calidad.html
+   - HTML interactivo: animacion_scatter_alcohol_quality.html
+   - HTML interactivo: animacion_cuisines_quality.html
+
+   SECCIÓN 9 - ANÁLISIS INTEGRADO:
+   - Texto sobre normalización de escalas
+   - Imagen: analisis_comparativo_datasets.png
+   - Imagen: 10_area.png
+   - Hallazgos principales
+
+   SECCIÓN 10 - CONCLUSIONES:
+   - Insights principales (lista)
+   - Aplicaciones prácticas
+   - Tabla resumen de gráficas
+   - Referencias y recursos
+
+6. DISEÑO Y ESTILO:
+   - Paleta de colores: burgundy (#8B0000), dorado (#D4AF37), crema (#F5F5DC)
+   - Tipografía: Inter para texto, Playfair Display para títulos
+   - Espaciado generoso entre secciones
+   - Cards con sombra suave para imágenes
+   - Animaciones sutiles (fade-in, slide)
+   - Modo oscuro con paleta adaptada
+
+7. METADATA Y SEO:
+   - Títulos descriptivos por página
+   - Meta descriptions
+   - Open Graph tags
+   - Favicon personalizado
+
+8. DEPLOYMENT EN VERCEL:
+   - Crear archivo vercel.json si es necesario
+   - Optimizar imágenes (Next.js Image)
+   - Configurar redirects si aplica
+
+ARCHIVOS QUE DEBO PROPORCIONAR:
+- Yo moveré todos los PNG a public/images/
+- Yo moveré todos los HTML a public/interactive/
+- Tú creas toda la estructura del proyecto
+
+FLUJO DE TRABAJO:
+1. Inicializa proyecto Next.js con TypeScript y Tailwind
+2. Instala shadcn/ui y componentes necesarios
+3. Crea estructura de carpetas
+4. Implementa componentes reutilizables
+5. Crea todas las páginas con contenido
+6. Configura navegación
+7. Optimiza para producción
+8. Dame instrucciones para deployment
+
+NOTA IMPORTANTE:
+- El contenido textual debe ser exactamente el que te proporcioné en la estructura anterior
+- Las imágenes y archivos HTML deben referenciarse correctamente desde public/
+- Debe verse profesional, como un portfolio de ciencia de datos
+- Prioriza UX: carga rápida, navegación intuitiva, contenido legible
+
+¿Puedes ayudarme a crear este proyecto paso a paso?

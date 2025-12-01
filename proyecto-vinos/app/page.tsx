@@ -1,65 +1,201 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { ArrowRight, Wine, BarChart3, Map, Sparkles } from 'lucide-react';
+import { navigation, datasets } from '@/lib/data';
 
 export default function Home() {
+  const sections = navigation.filter(item => item.href !== '/');
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-primary/5 via-secondary/5 to-background py-20 px-6 md:px-12">
+        <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
+          <div className="flex items-center gap-3 text-primary">
+            <Wine className="w-10 h-10" />
+            <span className="text-sm font-semibold uppercase tracking-wider">
+              Wine Data Science Project
+            </span>
+          </div>
+
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground leading-tight">
+            Análisis de Vinos<br />
+            <span className="text-primary">y Maridajes</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="text-xl text-muted-foreground max-w-3xl">
+            Exploración completa de {datasets.wineQuality.records.toLocaleString()} vinos tintos portugueses
+            y {datasets.winePairings.records.toLocaleString()} combinaciones de maridaje. Un viaje por datos,
+            visualizaciones interactivas y análisis estadístico profundo.
           </p>
+
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/sections/introduccion"
+              className=" btn-override inline-flex items-center gap-2 px-6 py-3 bg-primary rounded-lg font-semibold hover:bg-primary/90 transition-colors card-shadow"
+            >
+              Comenzar el recorrido
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="/sections/conclusiones"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-card border border-border text-foreground rounded-lg font-semibold hover:bg-muted transition-colors"
+            >
+              Ver conclusiones
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 px-6 md:px-12 bg-card border-y border-border">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center space-y-2 animate-fade-in">
+            <div className="text-3xl font-bold text-primary">1,599</div>
+            <div className="text-sm text-muted-foreground">Vinos Analizados</div>
+          </div>
+          <div className="text-center space-y-2 animate-fade-in">
+            <div className="text-3xl font-bold text-primary">34,933</div>
+            <div className="text-sm text-muted-foreground">Maridajes</div>
+          </div>
+          <div className="text-center space-y-2 animate-fade-in">
+            <div className="text-3xl font-bold text-primary">24</div>
+            <div className="text-sm text-muted-foreground">Visualizaciones</div>
+          </div>
+          <div className="text-center space-y-2 animate-fade-in">
+            <div className="text-3xl font-bold text-primary">11</div>
+            <div className="text-sm text-muted-foreground">Interactivas</div>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Highlights Section */}
+      <section className="py-16 px-6 md:px-12">
+        <div className="max-w-5xl mx-auto space-y-12">
+          <div className="text-center space-y-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+              Aspectos Destacados
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Descubre los análisis más interesantes de nuestro proyecto
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-card border border-border rounded-lg card-shadow-hover space-y-4 animate-fade-in">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <BarChart3 className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-xl text-foreground">
+                Correlaciones Fisicoquímicas
+              </h3>
+              <p className="text-muted-foreground">
+                Análisis profundo de 11 variables fisicoquímicas y su impacto en la calidad del vino.
+              </p>
+              <Link
+                href="/sections/correlaciones"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
+              >
+                Explorar
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="p-6 bg-card border border-border rounded-lg card-shadow-hover space-y-4 animate-fade-in">
+              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                <Map className="w-6 h-6 text-secondary-foreground" />
+              </div>
+              <h3 className="font-semibold text-xl text-foreground">
+                Análisis Geográfico
+              </h3>
+              <p className="text-muted-foreground">
+                Mapas interactivos de distribución mundial de cocinas y regiones vinícolas.
+              </p>
+              <Link
+                href="/sections/geografia"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
+              >
+                Ver mapas
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="p-6 bg-card border border-border rounded-lg card-shadow-hover space-y-4 animate-fade-in">
+              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                <Sparkles className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-xl text-foreground">
+                Sistema de Recomendación
+              </h3>
+              <p className="text-muted-foreground">
+                Herramienta interactiva para recomendar vinos basada en preferencias y comidas.
+              </p>
+              <Link
+                href="/sections/recomendacion"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
+              >
+                Probar sistema
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sections Grid */}
+      <section className="py-16 px-6 md:px-12 bg-muted/30">
+        <div className="max-w-5xl mx-auto space-y-8">
+          <div className="text-center space-y-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+              Todas las Secciones
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Explora el análisis completo paso a paso
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {sections.map((section, index) => (
+              <Link
+                key={section.href}
+                href={section.href}
+                className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-all card-shadow-hover animate-fade-in"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1 space-y-2">
+                    <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                      {section.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {section.description}
+                    </p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6 md:px-12">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
+            ¿Listo para explorar?
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Comienza tu recorrido por el fascinante mundo del análisis de vinos
+          </p>
+          <Link
+            href="/sections/introduccion"
+            className="btn-override inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors card-shadow text-lg"
+          >
+            Comenzar ahora
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
