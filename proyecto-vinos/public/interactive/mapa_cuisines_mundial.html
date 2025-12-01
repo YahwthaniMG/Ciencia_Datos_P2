@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_95a37195739e75ed8cc943b92981fb15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            top: 10px; right: 10px; width: 200px; height: 180px; 
+            background-color: white; z-index:9999; font-size:14px;
+            border:2px solid grey; border-radius: 5px; padding: 10px">
+    <p style="margin: 0; font-weight: bold; text-align: center;">Calidad de Maridajes</p>
+    <hr style="margin: 5px 0;">
+    <p style="margin: 3px 0;"><span style="color: darkgreen;">●</span> Excelente (≥4.0)</p>
+    <p style="margin: 3px 0;"><span style="color: green;">●</span> Muy Buena (3.5-4.0)</p>
+    <p style="margin: 3px 0;"><span style="color: lightgreen;">●</span> Buena (3.0-3.5)</p>
+    <p style="margin: 3px 0;"><span style="color: orange;">●</span> Regular (2.5-3.0)</p>
+    <p style="margin: 3px 0;"><span style="color: red;">●</span> Baja (<2.5)</p>
+    <hr style="margin: 5px 0;">
+    <p style="margin: 3px 0; font-size: 12px;"><i>Tamaño = Cantidad de maridajes</i></p>
+</div>
+    
+            <div class="folium-map" id="map_95a37195739e75ed8cc943b92981fb15" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_95a37195739e75ed8cc943b92981fb15 = L.map(
+                "map_95a37195739e75ed8cc943b92981fb15",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d4f462a68e4fb24c36e75cd343df37d5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d4f462a68e4fb24c36e75cd343df37d5.addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+            var circle_marker_a6aaa7b792925ba0e5dd146c98faaf9c = L.circleMarker(
+                [23.6345, -102.5528],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_af536450f77d5640a59a13e9db9b2db2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f79edced614be6a985372747612f818 = $(`<div id="html_6f79edced614be6a985372747612f818" style="width: 100.0%; height: 100.0%;">         <b>Mexican</b><br>         País: Mexico<br>         Región: América del Norte<br>         <hr>         Total de maridajes: 2,089<br>         Calidad promedio: 3.02/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_af536450f77d5640a59a13e9db9b2db2.setContent(html_6f79edced614be6a985372747612f818);
+            
+        
+
+        circle_marker_a6aaa7b792925ba0e5dd146c98faaf9c.bindPopup(popup_af536450f77d5640a59a13e9db9b2db2)
+        ;
+
+        
+    
+    
+            circle_marker_a6aaa7b792925ba0e5dd146c98faaf9c.bindTooltip(
+                `<div>
+                     Mexican
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05e8e5042e877d44b51748d40511146a = L.circleMarker(
+                [38.9637, 35.2433],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.820895522388057, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_6a3da961f7fbd28ed447fdaeab00c6e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e624839c88a9bfcffe60d5103d4b3f7 = $(`<div id="html_5e624839c88a9bfcffe60d5103d4b3f7" style="width: 100.0%; height: 100.0%;">         <b>Middle Eastern</b><br>         País: Turkey<br>         Región: Medio Oriente<br>         <hr>         Total de maridajes: 2,075<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_6a3da961f7fbd28ed447fdaeab00c6e6.setContent(html_5e624839c88a9bfcffe60d5103d4b3f7);
+            
+        
+
+        circle_marker_05e8e5042e877d44b51748d40511146a.bindPopup(popup_6a3da961f7fbd28ed447fdaeab00c6e6)
+        ;
+
+        
+    
+    
+            circle_marker_05e8e5042e877d44b51748d40511146a.bindTooltip(
+                `<div>
+                     Middle Eastern
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5c7fc41de4a3c700fc4018e8b8be143 = L.circleMarker(
+                [15.87, 100.9925],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.62686567164179, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_e276013ca424ad476f2a237cae4f3768 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7404f941aafe4655a8d58eaf39c1db1 = $(`<div id="html_f7404f941aafe4655a8d58eaf39c1db1" style="width: 100.0%; height: 100.0%;">         <b>Thai</b><br>         País: Thailand<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,071<br>         Calidad promedio: 3.02/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_e276013ca424ad476f2a237cae4f3768.setContent(html_f7404f941aafe4655a8d58eaf39c1db1);
+            
+        
+
+        circle_marker_d5c7fc41de4a3c700fc4018e8b8be143.bindPopup(popup_e276013ca424ad476f2a237cae4f3768)
+        ;
+
+        
+    
+    
+            circle_marker_d5c7fc41de4a3c700fc4018e8b8be143.bindTooltip(
+                `<div>
+                     Thai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56728c11619c130b8c6e9151c2f4e324 = L.circleMarker(
+                [31.7917, -7.0926],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.73134328358209, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_5abe436842098d3482480556ca61c90f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c652231c9d852b9f897e3b9ec1c9338f = $(`<div id="html_c652231c9d852b9f897e3b9ec1c9338f" style="width: 100.0%; height: 100.0%;">         <b>Moroccan</b><br>         País: Morocco<br>         Región: África<br>         <hr>         Total de maridajes: 2,068<br>         Calidad promedio: 3.02/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_5abe436842098d3482480556ca61c90f.setContent(html_c652231c9d852b9f897e3b9ec1c9338f);
+            
+        
+
+        circle_marker_56728c11619c130b8c6e9151c2f4e324.bindPopup(popup_5abe436842098d3482480556ca61c90f)
+        ;
+
+        
+    
+    
+            circle_marker_56728c11619c130b8c6e9151c2f4e324.bindTooltip(
+                `<div>
+                     Moroccan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4117f9da95b5c6a278561353460d9ea = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.73134328358209, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_efee3defd766cc472f7220502675546b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f747771038b62d0978b77c1fec175150 = $(`<div id="html_f747771038b62d0978b77c1fec175150" style="width: 100.0%; height: 100.0%;">         <b>Chinese (Sichuan)</b><br>         País: China<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,068<br>         Calidad promedio: 3.02/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_efee3defd766cc472f7220502675546b.setContent(html_f747771038b62d0978b77c1fec175150);
+            
+        
+
+        circle_marker_f4117f9da95b5c6a278561353460d9ea.bindPopup(popup_efee3defd766cc472f7220502675546b)
+        ;
+
+        
+    
+    
+            circle_marker_f4117f9da95b5c6a278561353460d9ea.bindTooltip(
+                `<div>
+                     Chinese (Sichuan)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b12acb66bd8eb0ded5906fc2f354642 = L.circleMarker(
+                [14.0583, 108.2772],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.83582089552239, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_0f46e5eca4c3d7cd124351bb05aee890 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8205d9afaef61ae3a6dd3814965fb25f = $(`<div id="html_8205d9afaef61ae3a6dd3814965fb25f" style="width: 100.0%; height: 100.0%;">         <b>Vietnamese</b><br>         País: Vietnam<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,065<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_0f46e5eca4c3d7cd124351bb05aee890.setContent(html_8205d9afaef61ae3a6dd3814965fb25f);
+            
+        
+
+        circle_marker_1b12acb66bd8eb0ded5906fc2f354642.bindPopup(popup_0f46e5eca4c3d7cd124351bb05aee890)
+        ;
+
+        
+    
+    
+            circle_marker_1b12acb66bd8eb0ded5906fc2f354642.bindTooltip(
+                `<div>
+                     Vietnamese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8619c7dd586a84b5e182a6e0366bbe1b = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.940298507462686, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_e9fc108b773868a3387882c08da2bc3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fbc497c11911b53eea5979d983198b9 = $(`<div id="html_5fbc497c11911b53eea5979d983198b9" style="width: 100.0%; height: 100.0%;">         <b>Indian</b><br>         País: India<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,062<br>         Calidad promedio: 3.03/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_e9fc108b773868a3387882c08da2bc3e.setContent(html_5fbc497c11911b53eea5979d983198b9);
+            
+        
+
+        circle_marker_8619c7dd586a84b5e182a6e0366bbe1b.bindPopup(popup_e9fc108b773868a3387882c08da2bc3e)
+        ;
+
+        
+    
+    
+            circle_marker_8619c7dd586a84b5e182a6e0366bbe1b.bindTooltip(
+                `<div>
+                     Indian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f4eb8a3f2fb1cef3ce81d6c00c5d409 = L.circleMarker(
+                [9.145, 40.4897],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.044776119402986, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_bf0296d49490113a9163dea2ff844598 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd7fb21dcbf4f130f75a6434ea85bef1 = $(`<div id="html_dd7fb21dcbf4f130f75a6434ea85bef1" style="width: 100.0%; height: 100.0%;">         <b>Ethiopian</b><br>         País: Ethiopia<br>         Región: África<br>         <hr>         Total de maridajes: 2,059<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_bf0296d49490113a9163dea2ff844598.setContent(html_dd7fb21dcbf4f130f75a6434ea85bef1);
+            
+        
+
+        circle_marker_5f4eb8a3f2fb1cef3ce81d6c00c5d409.bindPopup(popup_bf0296d49490113a9163dea2ff844598)
+        ;
+
+        
+    
+    
+            circle_marker_5f4eb8a3f2fb1cef3ce81d6c00c5d409.bindTooltip(
+                `<div>
+                     Ethiopian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5030daecc16426c6edb0d8759c5d6faf = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.746268656716417, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_e235c21dc6fd4684e97711cc292566ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecc70f4777d64273ed66ede71576c562 = $(`<div id="html_ecc70f4777d64273ed66ede71576c562" style="width: 100.0%; height: 100.0%;">         <b>Korean</b><br>         País: South Korea<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,058<br>         Calidad promedio: 3.03/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_e235c21dc6fd4684e97711cc292566ab.setContent(html_ecc70f4777d64273ed66ede71576c562);
+            
+        
+
+        circle_marker_5030daecc16426c6edb0d8759c5d6faf.bindPopup(popup_e235c21dc6fd4684e97711cc292566ab)
+        ;
+
+        
+    
+    
+            circle_marker_5030daecc16426c6edb0d8759c5d6faf.bindTooltip(
+                `<div>
+                     Korean
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aad3d0dc91f96835e3fccbc3960d5f86 = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.059701492537313, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_62e58ce325b4d9d59f89c574952ae26b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46cd17bd5549d0ae5907db03281fe1ac = $(`<div id="html_46cd17bd5549d0ae5907db03281fe1ac" style="width: 100.0%; height: 100.0%;">         <b>American BBQ</b><br>         País: United States<br>         Región: América del Norte<br>         <hr>         Total de maridajes: 2,049<br>         Calidad promedio: 3.03/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_62e58ce325b4d9d59f89c574952ae26b.setContent(html_46cd17bd5549d0ae5907db03281fe1ac);
+            
+        
+
+        circle_marker_aad3d0dc91f96835e3fccbc3960d5f86.bindPopup(popup_62e58ce325b4d9d59f89c574952ae26b)
+        ;
+
+        
+    
+    
+            circle_marker_aad3d0dc91f96835e3fccbc3960d5f86.bindTooltip(
+                `<div>
+                     American BBQ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5868b0442b313429e25ef9ac1d1c3a71 = L.circleMarker(
+                [36.2048, 138.2529],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.46268656716418, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_a4feff18f6bd1d2a67c580ef7e05dbe4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d746f8261218516dfb887991c2f467c8 = $(`<div id="html_d746f8261218516dfb887991c2f467c8" style="width: 100.0%; height: 100.0%;">         <b>Japanese</b><br>         País: Japan<br>         Región: Asia<br>         <hr>         Total de maridajes: 2,047<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_a4feff18f6bd1d2a67c580ef7e05dbe4.setContent(html_d746f8261218516dfb887991c2f467c8);
+            
+        
+
+        circle_marker_5868b0442b313429e25ef9ac1d1c3a71.bindPopup(popup_a4feff18f6bd1d2a67c580ef7e05dbe4)
+        ;
+
+        
+    
+    
+            circle_marker_5868b0442b313429e25ef9ac1d1c3a71.bindTooltip(
+                `<div>
+                     Japanese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0873f849e6b8cac11f8c4b465bc9d36e = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.865671641791044, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_b7f6ce6df7bbaf1abd36a8fc18e00112 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97d1e68f60a456b963e7dc186ce8611c = $(`<div id="html_97d1e68f60a456b963e7dc186ce8611c" style="width: 100.0%; height: 100.0%;">         <b>Argentinian</b><br>         País: Argentina<br>         Región: América del Sur<br>         <hr>         Total de maridajes: 2,045<br>         Calidad promedio: 3.02/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_b7f6ce6df7bbaf1abd36a8fc18e00112.setContent(html_97d1e68f60a456b963e7dc186ce8611c);
+            
+        
+
+        circle_marker_0873f849e6b8cac11f8c4b465bc9d36e.bindPopup(popup_b7f6ce6df7bbaf1abd36a8fc18e00112)
+        ;
+
+        
+    
+    
+            circle_marker_0873f849e6b8cac11f8c4b465bc9d36e.bindTooltip(
+                `<div>
+                     Argentinian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7000187ca3985cdb71d23b18849e57a8 = L.circleMarker(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.567164179104477, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_8a772c565663e64247c5cb8472d80669 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_492b53bee9a9ef8f352ef5175a201349 = $(`<div id="html_492b53bee9a9ef8f352ef5175a201349" style="width: 100.0%; height: 100.0%;">         <b>Spanish</b><br>         País: Spain<br>         Región: Europa<br>         <hr>         Total de maridajes: 2,044<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_8a772c565663e64247c5cb8472d80669.setContent(html_492b53bee9a9ef8f352ef5175a201349);
+            
+        
+
+        circle_marker_7000187ca3985cdb71d23b18849e57a8.bindPopup(popup_8a772c565663e64247c5cb8472d80669)
+        ;
+
+        
+    
+    
+            circle_marker_7000187ca3985cdb71d23b18849e57a8.bindTooltip(
+                `<div>
+                     Spanish
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3314d0bd12eb5709d9672297a175ffe6 = L.circleMarker(
+                [41.8719, 12.5674],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.970149253731343, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_05130287ea93c0c360cc99cd90f75ae3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1aa037556ad7e76bf9e39358390a767d = $(`<div id="html_1aa037556ad7e76bf9e39358390a767d" style="width: 100.0%; height: 100.0%;">         <b>Italian</b><br>         País: Italy<br>         Región: Europa<br>         <hr>         Total de maridajes: 2,042<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_05130287ea93c0c360cc99cd90f75ae3.setContent(html_1aa037556ad7e76bf9e39358390a767d);
+            
+        
+
+        circle_marker_3314d0bd12eb5709d9672297a175ffe6.bindPopup(popup_05130287ea93c0c360cc99cd90f75ae3)
+        ;
+
+        
+    
+    
+            circle_marker_3314d0bd12eb5709d9672297a175ffe6.bindTooltip(
+                `<div>
+                     Italian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e63b10f7b62de4d6ec12693d36f97ad0 = L.circleMarker(
+                [39.0742, 21.8243],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.776119402985074, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_73f7c2b66c26a5f5649ea286cbe67e2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a84339e858d7cf91e4eb457265acb5b3 = $(`<div id="html_a84339e858d7cf91e4eb457265acb5b3" style="width: 100.0%; height: 100.0%;">         <b>Greek</b><br>         País: Greece<br>         Región: Europa<br>         <hr>         Total de maridajes: 2,038<br>         Calidad promedio: 3.01/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_73f7c2b66c26a5f5649ea286cbe67e2e.setContent(html_a84339e858d7cf91e4eb457265acb5b3);
+            
+        
+
+        circle_marker_e63b10f7b62de4d6ec12693d36f97ad0.bindPopup(popup_73f7c2b66c26a5f5649ea286cbe67e2e)
+        ;
+
+        
+    
+    
+            circle_marker_e63b10f7b62de4d6ec12693d36f97ad0.bindTooltip(
+                `<div>
+                     Greek
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06445a61e6abf02b7b64a5c9f5755e65 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.686567164179104, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_9fc3ec41c84abf9d73293112d8bbbee9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a71586fd092b0f1ba42c33e1ba5443b6 = $(`<div id="html_a71586fd092b0f1ba42c33e1ba5443b6" style="width: 100.0%; height: 100.0%;">         <b>French</b><br>         País: France<br>         Región: Europa<br>         <hr>         Total de maridajes: 2,031<br>         Calidad promedio: 3.00/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_9fc3ec41c84abf9d73293112d8bbbee9.setContent(html_a71586fd092b0f1ba42c33e1ba5443b6);
+            
+        
+
+        circle_marker_06445a61e6abf02b7b64a5c9f5755e65.bindPopup(popup_9fc3ec41c84abf9d73293112d8bbbee9)
+        ;
+
+        
+    
+    
+            circle_marker_06445a61e6abf02b7b64a5c9f5755e65.bindTooltip(
+                `<div>
+                     French
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73d3cb9452d539e2b865878c526dd7b6 = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_95a37195739e75ed8cc943b92981fb15);
+        
+    
+        var popup_fe9cb1ebd47618d05ae7457b7f8f7e1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d00a8236e82f00f994012906943d280 = $(`<div id="html_4d00a8236e82f00f994012906943d280" style="width: 100.0%; height: 100.0%;">         <b>German</b><br>         País: Germany<br>         Región: Europa<br>         <hr>         Total de maridajes: 2,022<br>         Calidad promedio: 3.00/5<br>         Vinos únicos: 29<br>         Comidas únicas: 38         </div>`)[0];
+                popup_fe9cb1ebd47618d05ae7457b7f8f7e1a.setContent(html_4d00a8236e82f00f994012906943d280);
+            
+        
+
+        circle_marker_73d3cb9452d539e2b865878c526dd7b6.bindPopup(popup_fe9cb1ebd47618d05ae7457b7f8f7e1a)
+        ;
+
+        
+    
+    
+            circle_marker_73d3cb9452d539e2b865878c526dd7b6.bindTooltip(
+                `<div>
+                     German
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
