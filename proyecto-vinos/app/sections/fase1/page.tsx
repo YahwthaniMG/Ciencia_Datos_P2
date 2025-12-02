@@ -60,28 +60,28 @@ export default function Fase1Page() {
             </h3>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span>
                   <strong className="text-foreground">Residual Sugar:</strong> Presenta varios outliers
                   superiores, indicando vinos con dulzor inusualmente alto
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span>
                   <strong className="text-foreground">Chlorides:</strong> Valores atípicos en ambos extremos,
                   sugiriendo variabilidad en contenido mineral
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span>
                   <strong className="text-foreground">Total Sulfur Dioxide:</strong> Outliers significativos
                   que podrían afectar el perfil de conservación
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span>
                   <strong className="text-foreground">Alcohol:</strong> Distribución relativamente uniforme
                   con pocos valores extremos

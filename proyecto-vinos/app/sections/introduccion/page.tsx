@@ -50,20 +50,20 @@ export default function IntroduccionPage() {
               </h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Identificar variables fisicoquímicas clave que determinan la calidad</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Identificar variables fisicoquímicas clave que determinan la calidad</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Analizar correlaciones entre propiedades</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Analizar correlaciones entre propiedades</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Detectar outliers y patrones anómalos</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Detectar outliers y patrones anómalos</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Clasificar vinos por categorías de calidad</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Clasificar vinos por categorías de calidad</span>
                 </li>
               </ul>
             </div>
@@ -74,20 +74,20 @@ export default function IntroduccionPage() {
               </h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Mapear distribución geográfica de cocinas y vinos</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Mapear distribución geográfica de cocinas y vinos</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Identificar maridajes más populares</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Identificar maridajes más populares</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Desarrollar sistema de recomendación</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Desarrollar sistema de recomendación</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-primary mt-1">"</span>
-                  <span>Analizar variedad de vinos por cocina</span>
+                  <span className="text-primary mt-1">°</span>
+                  <span>  Analizar variedad de vinos por cocina</span>
                 </li>
               </ul>
             </div>

@@ -23,8 +23,8 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl">
-            Exploración completa de {datasets.wineQuality.records.toLocaleString()} vinos tintos portugueses
-            y {datasets.winePairings.records.toLocaleString()} combinaciones de maridaje. Un viaje por datos,
+            Exploración completa de {datasets.wineQuality.records.toLocaleString()} vinos tintos
+            y {datasets.winePairings.records.toLocaleString()} combinaciones de maridaje entre 29 tipos de uva y 38 tipos de comida. Un viaje por datos,
             visualizaciones interactivas y análisis estadístico profundo.
           </p>
 

@@ -340,7 +340,7 @@ export const datasets = {
       'alcohol',
       'quality'
     ],
-    description: 'Dataset de vinos tintos portugueses con sus propiedades fisicoquímicas y calificación de calidad'
+    description: 'Dataset de vinos tintos con sus propiedades fisicoquímicas y calificación de calidad'
   },
   winePairings: {
     name: 'Wine Food Pairings',
