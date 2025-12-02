@@ -25,8 +25,9 @@ export default function GeografiaPage() {
           <InteractiveEmbed
             src="/interactive/mapa_cuisines_mundial.html"
             title="Distribución Global de Cocinas"
-            description="Mapa interactivo mostrando la diversidad de cocinas por región geográfica"
-            notebook="visualizaciones_interactivas.ipynb"
+            description="Mapa interactivo mostrando la diversidad de cocinas por región geográfica,
+            asi como la cantidad de maridajes realizadas en cada una"
+            notebook="Fase_2.5.ipynb"
             section="Análisis Geográfico"
             height="700px"
           />
@@ -39,9 +40,10 @@ export default function GeografiaPage() {
           <InteractiveEmbed
             src="/interactive/distribucion_regional.html"
             title="Análisis por Regiones"
-            description="Visualización interactiva de la distribución de maridajes por región"
+            description="Visualización interactiva de la distribución de maridajes por región, 
+            mostrando las minimas diferencias de calidad entre ellas"
             notebook="visualizaciones_interactivas.ipynb"
-            section="Análisis Geográfico"
+            section="Fase_2.5.ipynb"
             height="650px"
           />
         </section>
@@ -54,8 +56,8 @@ export default function GeografiaPage() {
             src="/images/06_barras_horizontales.png"
             alt="Top cuisines"
             title="Cocinas Más Populares"
-            description="Las cocinas con mayor número de maridajes registrados"
-            notebook="analisis_maridajes.ipynb"
+            description="Top 10 cocinas con mayor número de maridajes registrados"
+            notebook="Fase_2.5.ipynb"
             section="Análisis Geográfico"
           />
         </section>
@@ -68,8 +70,8 @@ export default function GeografiaPage() {
             <div className="p-6 bg-card border border-border rounded-lg">
               <h4 className="font-semibold text-foreground mb-3">Europa Dominante</h4>
               <p className="text-sm text-muted-foreground">
-                Las cocinas europeas (italiana, francesa, española) lideran en número de maridajes,
-                reflejando la tradición vinícola del continente.
+                Las cocinas europeas (italiana, francesa, española) se encuentran en la segunda posición
+                del liderato en número de maridajes, reflejando la tradición vinícola del continente.
               </p>
             </div>
             <div className="p-6 bg-card border border-border rounded-lg">
