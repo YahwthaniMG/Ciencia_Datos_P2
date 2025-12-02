@@ -35,16 +35,106 @@ export default function Fase1Page() {
             alt="Distribución de calidad de vinos"
             title="Distribución de Categorías de Calidad"
             description="Gráfico de pastel mostrando la proporción de vinos en cada categoría de calidad"
-            notebook="analisis_vinos.ipynb"
+            notebook="Fase_1.ipynb"
             section="Análisis Exploratorio"
           />
 
           <ImageViewer
             src="/images/07_histograma.png"
-            alt="Distribución de variables"
+            alt="Distribución de alcohol"
             title="Histogramas de Distribución"
-            description="Distribución de frecuencias de las principales variables fisicoquímicas"
-            notebook="analisis_vinos.ipynb"
+            description="Distribución de frecuencias del alcohol en los vinos"
+            notebook="Fase_2.5.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/chlorides.png"
+            alt="Distribución de los cloruros"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de los cloruros en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/citric acid.png"
+            alt="Distribución de los acidos citricos"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de los acidos citricos en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/density.png"
+            alt="Distribución de la densidad"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de la densidad en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/fixed acidity.png"
+            alt="Distribución de la acidez fija"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de la acidez fija en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/free sulfur dioxide.png"
+            alt="Distribución del dióxido de azufre libre"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias del dióxido de azufre libre en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/pH.png"
+            alt="Distribución del pH"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias del pH en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/residual sugar.png"
+            alt="Distribución del azúcar residual"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias del azúcar residual en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/sulphates.png"
+            alt="Distribución de los sulfatos"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de los sulfatos en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/total sulfur dioxide.png"
+            alt="Distribución del dióxido de azufre total"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias del dióxido de azufre total en los vinos"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/volatile acidity.png"
+            alt="Distribución de la acidez volátil"
+            title="Histogramas de Distribución"
+            description="Distribución de frecuencias de la acidez volátil en los vinos"
+            notebook="Fase_1.ipynb"
             section="Análisis Exploratorio"
           />
         </section>
