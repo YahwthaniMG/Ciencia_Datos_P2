@@ -181,11 +181,38 @@ export default function Fase1Page() {
           </div>
 
           <ImageViewer
-            src="/images/08_boxplot.png"
-            alt="Boxplot de variables"
+            src="/images/residual sugar.png"
+            alt="Boxplot de azúcar residual"
             title="Boxplots para Detección de Outliers"
-            description="Identificación de valores atípicos en variables fisicoquímicas mediante diagramas de caja"
-            notebook="analisis_vinos.ipynb"
+            description="Identificación de valores atípicos en azúcar residual respecto la calidad, mediante diagramas de caja"
+            notebook="Fase_2.5.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/chlorides.png"
+            alt="Boxplot de cloruros"
+            title="Boxplots para Detección de Outliers"
+            description="Identificación de valores atípicos en cloruros respecto la calidad, mediante diagramas de caja"
+            notebook="Fase_2.5.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/total sulfur dioxide.png"
+            alt="Boxplot del dióxido de azufre total"
+            title="Boxplots para Detección de Outliers"
+            description="Identificación de valores atípicos en el dióxido de azufre total respecto la calidad, mediante diagramas de caja"
+            notebook="Fase_2.5.ipynb"
+            section="Análisis Exploratorio"
+          />
+
+          <ImageViewer
+            src="/images/08_boxplot.png"
+            alt="Boxplot de alcohol"
+            title="Boxplots para Detección de Outliers"
+            description="Identificación de valores atípicos en alcohol respecto la calidad, mediante diagramas de caja"
+            notebook="Fase_2.5.ipynb"
             section="Análisis Exploratorio"
           />
         </section>
