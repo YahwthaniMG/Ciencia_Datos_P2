@@ -295,7 +295,7 @@ export default function Fase1Page() {
             section="Análisis Exploratorio"
           />
           <ImageViewer
-            src="/images/barplot_wine_type.png"
+            src="/images/barplot_wine_category.png"
             alt="Distribución de todos los tipos de vinos evaluados"
             title="Distribución de los vinos evaluados"
             description="Gráfico de barras mostrando todos los tipos de vinos evaluados"
@@ -304,12 +304,43 @@ export default function Fase1Page() {
           />
           <ImageViewer
             src="/images/barplot_cuisine.png"
-            alt="Distribución de las 5 cocinas mas evaluadas"
-            title="Distribución del Top 5 cocinas mas evaluadas"
-            description="Gráfico de barras mostrando las 5 cocinas mas evaluadas en el maridaje"
+            alt="Distribución de las 5 cocinas más evaluadas"
+            title="Distribución del Top 5 cocinas más evaluadas"
+            description="Gráfico de barras mostrando las 5 cocinas más evaluadas en el maridaje"
             notebook="Fase_1.ipynb"
             section="Análisis Exploratorio"
           />
+          <ImageViewer
+            src="/images/barplot_food_category.png"
+            alt="Distribución del Top 5 categorias de alimentos más evaluados"
+            title="Distribución del Top 5 categorias de alimentos más evaluados"
+            description="Gráfico de barras mostrando el Top 5 categorias de alimentos más evaluados"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+        </section>
+
+        {/* Conclusiones de Fase 1 */}
+        <section className="space-y-4">
+          <h2 className="font-serif text-3xl font-bold text-foreground">
+            Conclusiones del Análisis Exploratorio Wine Food Pairings
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-4 bg-card border border-border rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2">Calidad de Datos</h4>
+              <p className="text-sm text-muted-foreground">
+                Dataset limpio con distribuciones razonables. No existen outliers, ni perdida de datos.
+                Las distribuciones de calidad del maridaje son casi similares.
+              </p>
+            </div>
+            <div className="p-4 bg-card border border-border rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2">Patrones Identificados</h4>
+              <p className="text-sm text-muted-foreground">
+                Se detectaron 6 categorias de vinos, pertenecientes a 29 tipos de uvas, los cuales se emparejaron
+                con 38 alimentos, los cuales pertenecen a 12 categorias de alimentos, originarias de 17 cocinas del mundo.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Navigation */}
