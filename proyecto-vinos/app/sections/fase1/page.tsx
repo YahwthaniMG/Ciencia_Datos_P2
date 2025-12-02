@@ -22,7 +22,7 @@ export default function Fase1Page() {
         {/* Descripción de Datos */}
         <section className="space-y-6">
           <h2 className="font-serif text-3xl font-bold text-foreground">
-            Descripción de los Datos
+            Descripción de los Datos Red Wine Quality 
           </h2>
           <p className="text-muted-foreground">
             El análisis exploratorio inicial revela la estructura y características fundamentales de nuestro
@@ -250,6 +250,27 @@ export default function Fase1Page() {
           </div>
         </section>
 
+        {/* Descripción de Datos */}
+        <section className="space-y-6">
+          <h2 className="font-serif text-3xl font-bold text-foreground">
+            Descripción de los Datos Wine Food Pairings
+          </h2>
+          <p className="text-muted-foreground">
+            El análisis exploratorio inicial revela la estructura y características fundamentales de nuestro
+            dataset de maridajes. Con 34,933 observaciones y 5 variables, podemos identificar patrones importantes
+            entre los diversos vinos y su interacción con los alimentos pertenecientes a diversas cocinas.
+          </p>
+
+          <ImageViewer
+            src="/images/distribucion.png"
+            alt="Distribución de la calidad del maridaje"
+            title="Distribución de la calidad del maridaje"
+            description="Gráfico de barras mostrando la calidad del maridaje"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+        </section>
+
         {/* Conclusiones de Fase 1 */}
         <section className="space-y-4">
           <h2 className="font-serif text-3xl font-bold text-foreground">
@@ -267,7 +288,7 @@ export default function Fase1Page() {
               <h4 className="font-semibold text-foreground mb-2">Patrones Identificados</h4>
               <p className="text-sm text-muted-foreground">
                 Correlación positiva entre alcohol y calidad. La mayoría de vinos se concentran en
-                categorías de calidad media (5-6).
+                categorías de calidad media (3).
               </p>
             </div>
           </div>
