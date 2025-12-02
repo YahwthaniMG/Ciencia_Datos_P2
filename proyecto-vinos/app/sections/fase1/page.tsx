@@ -181,7 +181,7 @@ export default function Fase1Page() {
           </div>
 
           <ImageViewer
-            src="/images/residual sugar.png"
+            src="/images/outliers_residual sugar.png"
             alt="Boxplot de azúcar residual"
             title="Boxplots para Detección de Outliers"
             description="Identificación de valores atípicos en azúcar residual respecto la calidad, mediante diagramas de caja"
@@ -190,7 +190,7 @@ export default function Fase1Page() {
           />
 
           <ImageViewer
-            src="/images/chlorides.png"
+            src="/images/outliers_chlorides.png"
             alt="Boxplot de cloruros"
             title="Boxplots para Detección de Outliers"
             description="Identificación de valores atípicos en cloruros respecto la calidad, mediante diagramas de caja"
@@ -199,7 +199,7 @@ export default function Fase1Page() {
           />
 
           <ImageViewer
-            src="/images/total sulfur dioxide.png"
+            src="/images/outliers_total sulfur dioxide.png"
             alt="Boxplot del dióxido de azufre total"
             title="Boxplots para Detección de Outliers"
             description="Identificación de valores atípicos en el dióxido de azufre total respecto la calidad, mediante diagramas de caja"
