@@ -29,8 +29,10 @@ export default function SeabornPage() {
             src="/images/seaborn_pairplot.png"
             alt="Pairplot de variables"
             title="Matriz de Gráficos de Dispersión"
-            description="Visualización completa de relaciones entre variables principales"
-            notebook="analisis_seaborn.ipynb"
+            description="Visualización completa de relaciones entre variables principales, permitiendo
+            observar que los sulfatos son menores en los vinos de mejor calidad, al igual que los acidos
+            volatiles. Adicional a esto, los vinos de baja calidad tiene grados de alcohol mas bajos."
+            notebook="Fase_2.5.ipynb"
             section="Análisis con Seaborn"
           />
         </section>
@@ -47,8 +49,9 @@ export default function SeabornPage() {
             src="/images/seaborn_jointplot.png"
             alt="Jointplot"
             title="Análisis Bivariado con Distribuciones Marginales"
-            description="Relación detallada entre alcohol y calidad con distribuciones"
-            notebook="analisis_seaborn.ipynb"
+            description="Relación detallada entre alcohol y calidad con distribuciones, obteniendo
+            que la mayoria de los vinos tiene una calidad media, con un grado de alcohol entre 9-11 %"
+            notebook="Fase_2.5.ipynb"
             section="Análisis con Seaborn"
           />
         </section>
@@ -62,7 +65,9 @@ export default function SeabornPage() {
               src="/images/seaborn_violinplots.png"
               alt="Violin plots Seaborn"
               title="Violin Plots de Variables por Calidad"
-              description="Distribución de variables fisicoquímicas según categoría de calidad"
+              description="Distribución de variables fisicoquímicas según categoría de calidad, 
+              mostrando que los acidos volatiles disminuyen al aumentar la calidad, mientras que 
+              los acidos citricos aumentan."
               notebook="analisis_seaborn.ipynb"
               section="Análisis con Seaborn"
             />
@@ -70,7 +75,8 @@ export default function SeabornPage() {
               src="/images/09_violin.png"
               alt="Violin plot básico"
               title="Violin Plot: Distribución por Calidad"
-              description="Visualización de la distribución de variables principales"
+              description="Visualización de la distribución de variables principales, permite
+              observar que en todas las categorias de vinos, la mayor parte tiene calidad media."
               notebook="analisis_vinos.ipynb"
               section="Análisis con Seaborn"
             />
@@ -85,20 +91,6 @@ export default function SeabornPage() {
               y entender mejor cómo varían las propiedades fisicoquímicas entre diferentes niveles de calidad.
             </p>
           </div>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="font-serif text-3xl font-bold text-foreground">
-            Catplot: Análisis Categórico
-          </h2>
-          <ImageViewer
-            src="/images/seaborn_catplot.png"
-            alt="Catplot"
-            title="Visualización de Variables Categóricas"
-            description="Análisis de categorías de calidad y sus características"
-            notebook="analisis_seaborn.ipynb"
-            section="Análisis con Seaborn"
-          />
         </section>
 
         <section className="space-y-4">
