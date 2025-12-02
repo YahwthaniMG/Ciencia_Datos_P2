@@ -22,22 +22,23 @@ export default function CorrelacionesPage() {
             Matriz de Correlaciones
           </h2>
           <ImageViewer
-            src="/images/04_heatmap.png"
+            src="/images/correlacion.png"
             alt="Mapa de calor de correlaciones"
             title="Mapa de Calor de Correlaciones"
             description="Matriz completa de correlaciones entre variables fisicoquímicas"
-            notebook="analisis_vinos.ipynb"
+            notebook="Fase_1.ipynb"
             section="Correlaciones"
           />
 
           <ImageViewer
-            src="/images/seaborn_heatmap.png"
-            alt="Mapa de calor Seaborn"
-            title="Heatmap Estilizado con Seaborn"
-            description="Visualización mejorada de correlaciones con anotaciones"
-            notebook="analisis_seaborn.ipynb"
+            src="/images/correlaciones.png"
+            alt="Grafica de correlaciones mas fuertes Neg - Pos"
+            title="Grafica de correlaciones mas fuertes Neg - Pos"
+            description="Visualización de las correlaciones mas fuertes de forma absoluta"
+            notebook="Fase_1.ipynb"
             section="Correlaciones"
           />
+          
         </section>
 
         <section className="space-y-6">
