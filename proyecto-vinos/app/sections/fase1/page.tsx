@@ -250,6 +250,31 @@ export default function Fase1Page() {
           </div>
         </section>
 
+        
+
+        {/* Conclusiones de Fase 1 */}
+        <section className="space-y-4">
+          <h2 className="font-serif text-3xl font-bold text-foreground">
+            Conclusiones del Análisis Exploratorio Red Wine Quality
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-4 bg-card border border-border rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2">Calidad de Datos</h4>
+              <p className="text-sm text-muted-foreground">
+                Dataset limpio con distribuciones razonables. Los outliers detectados son legítimos
+                y representan la variabilidad natural del vino.
+              </p>
+            </div>
+            <div className="p-4 bg-card border border-border rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2">Patrones Identificados</h4>
+              <p className="text-sm text-muted-foreground">
+                Correlación positiva entre alcohol y calidad. La mayoría de vinos se concentran en
+                categorías de calidad media (3).
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Descripción de Datos */}
         <section className="space-y-6">
           <h2 className="font-serif text-3xl font-bold text-foreground">
@@ -269,29 +294,22 @@ export default function Fase1Page() {
             notebook="Fase_1.ipynb"
             section="Análisis Exploratorio"
           />
-        </section>
-
-        {/* Conclusiones de Fase 1 */}
-        <section className="space-y-4">
-          <h2 className="font-serif text-3xl font-bold text-foreground">
-            Conclusiones del Análisis Exploratorio
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="p-4 bg-card border border-border rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2">Calidad de Datos</h4>
-              <p className="text-sm text-muted-foreground">
-                Dataset limpio con distribuciones razonables. Los outliers detectados son legítimos
-                y representan la variabilidad natural del vino.
-              </p>
-            </div>
-            <div className="p-4 bg-card border border-border rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2">Patrones Identificados</h4>
-              <p className="text-sm text-muted-foreground">
-                Correlación positiva entre alcohol y calidad. La mayoría de vinos se concentran en
-                categorías de calidad media (3).
-              </p>
-            </div>
-          </div>
+          <ImageViewer
+            src="/images/barplot_wine_type.png"
+            alt="Distribución de todos los tipos de vinos evaluados"
+            title="Distribución de los vinos evaluados"
+            description="Gráfico de barras mostrando todos los tipos de vinos evaluados"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
+          <ImageViewer
+            src="/images/barplot_cuisine.png"
+            alt="Distribución de las 5 cocinas mas evaluadas"
+            title="Distribución del Top 5 cocinas mas evaluadas"
+            description="Gráfico de barras mostrando las 5 cocinas mas evaluadas en el maridaje"
+            notebook="Fase_1.ipynb"
+            section="Análisis Exploratorio"
+          />
         </section>
 
         {/* Navigation */}
