@@ -29,20 +29,20 @@ export default function CategoriasPage() {
             </h3>
             <p className="text-muted-foreground mb-4">
               Los vinos se clasifican en categorías de calidad basadas en evaluaciones sensoriales
-              realizadas por expertos. La escala va de 0 a 10, donde valores más altos indican
+              realizadas por expertos. La escala va de 1 a 5, donde valores más altos indican
               mayor calidad percibida.
             </p>
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div className="p-3 bg-card rounded-lg">
-                <div className="text-primary font-semibold mb-1">Calidad Baja (3-4)</div>
+                <div className="text-primary font-semibold mb-1">Calidad Baja (1-2)</div>
                 <div className="text-muted-foreground">Vinos con defectos notables o desequilibrados</div>
               </div>
               <div className="p-3 bg-card rounded-lg">
-                <div className="text-primary font-semibold mb-1">Calidad Media (5-6)</div>
+                <div className="text-primary font-semibold mb-1">Calidad Media (2-4)</div>
                 <div className="text-muted-foreground">Vinos correctos, representan la mayoría</div>
               </div>
               <div className="p-3 bg-card rounded-lg">
-                <div className="text-primary font-semibold mb-1">Calidad Alta (7-8)</div>
+                <div className="text-primary font-semibold mb-1">Calidad Alta (4-5)</div>
                 <div className="text-muted-foreground">Vinos de excelencia, bien balanceados</div>
               </div>
             </div>
@@ -73,7 +73,6 @@ export default function CategoriasPage() {
             description="Explora la distribución de categorías de calidad de forma interactiva"
             notebook="analisis_categorias.ipynb"
             section="Categorías"
-            height="650px"
           />
         </section>
 
