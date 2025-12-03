@@ -58,11 +58,11 @@ export default function Home() {
             <div className="text-sm text-muted-foreground">Maridajes</div>
           </div>
           <div className="text-center space-y-2 animate-fade-in">
-            <div className="text-3xl font-bold text-primary">24</div>
+            <div className="text-3xl font-bold text-primary">33</div>
             <div className="text-sm text-muted-foreground">Visualizaciones</div>
           </div>
           <div className="text-center space-y-2 animate-fade-in">
-            <div className="text-3xl font-bold text-primary">11</div>
+            <div className="text-3xl font-bold text-primary">8</div>
             <div className="text-sm text-muted-foreground">Interactivas</div>
           </div>
         </div>
