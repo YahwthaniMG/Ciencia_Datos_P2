@@ -30,15 +30,15 @@ export default function AnalisisIntegradoPage() {
             <h3 className="font-semibold text-lg text-foreground mb-3">Metodología de Integración</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
-                <span><strong className="text-foreground">Normalización Min-Max:</strong> Escalado de variables fisicoquímicas al rango [0,1]</span>
+                <span className="text-primary mt-1">°</span>
+                <span><strong className="text-foreground">Normalización Min-Max:</strong> Escalado de variables fisicoquímicas al rango [1-5]</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span><strong className="text-foreground">Encoding Categórico:</strong> Transformación de variedades y cuisines a valores numéricos</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-primary mt-1">"</span>
+                <span className="text-primary mt-1">°</span>
                 <span><strong className="text-foreground">Agregación:</strong> Cálculo de métricas comunes para permitir comparaciones directas</span>
               </li>
             </ul>
@@ -53,8 +53,16 @@ export default function AnalisisIntegradoPage() {
             src="/images/analisis_comparativo_datasets.png"
             alt="Análisis comparativo"
             title="Comparación Entre Wine Quality y Wine Pairings"
-            description="Visualización lado a lado de las características principales de ambos datasets"
-            notebook="analisis_integrado.ipynb"
+            description="Visualización lado a lado de las características principales de ambos datasets.
+            Podemos rescatar puntos importantes, como que la calidad de los vinos tintos evaluados es más
+            alta en promedio que los maridajes; asi como las carnes rojas fueron la categoria de alimentos 
+            mas evaluada, la comida picante fue la menor, mostrando que las propiedades fisioquimicas
+            de los alimentos  tambien influyen con la experiencia gastronomica, en especifico las carnes rojas 
+            y los vinos combinan bien porque los taninos del vino ayudan a limpiar la grasa de la carne, 
+            mientras que la grasa de la carne suaviza los taninos del vino, mientras que las comidas picantes 
+            no maridan bien con los vinos porque los taninos y el alto contenido de alcohol del vino 
+            intensifican el picante, creando una sensación desagradable, amarga o ardiente en el paladar"
+            notebook="Fase_2.5.ipynb"
             section="Análisis Integrado"
           />
         </section>

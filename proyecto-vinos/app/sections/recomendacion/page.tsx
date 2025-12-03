@@ -81,19 +81,19 @@ export default function RecomendacionPage() {
             <div className="p-6 bg-card border border-l-4 border-l-primary rounded-lg">
               <h4 className="font-semibold text-lg text-foreground mb-3">Maridajes Clásicos</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>° <strong className="text-foreground">Carnes rojas:</strong> Cabernet Sauvignon, Malbec</li>
-                <li>° <strong className="text-foreground">Pescados:</strong> Sauvignon Blanc, Chardonnay</li>
-                <li>° <strong className="text-foreground">Quesos:</strong> Pinot Noir, Merlot</li>
-                <li>° <strong className="text-foreground">Postres:</strong> Moscato, Port</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Carnes rojas:</strong> Cabernet Sauvignon, Malbec</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Pescados:</strong> Sauvignon Blanc, Chardonnay</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Quesos:</strong> Pinot Noir, Merlot</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Postres:</strong> Moscato, Port</li>
               </ul>
             </div>
             <div className="p-6 bg-card border border-l-4 border-l-secondary rounded-lg">
               <h4 className="font-semibold text-lg text-foreground mb-3">Combinaciones Innovadoras</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
                 <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Sushi:</strong> Riesling, Albariño</li>
-                <li>° <strong className="text-foreground">Tacos:</strong> Tempranillo, Garnacha</li>
-                <li>° <strong className="text-foreground">Curry:</strong> Gewürztraminer, Viognier</li>
-                <li>° <strong className="text-foreground">BBQ:</strong> Zinfandel, Syrah</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Tacos:</strong> Tempranillo, Garnacha</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Curry:</strong> Gewürztraminer, Viognier</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">BBQ:</strong> Zinfandel, Syrah</li>
               </ul>
             </div>
           </div>

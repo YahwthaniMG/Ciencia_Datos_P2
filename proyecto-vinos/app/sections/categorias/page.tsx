@@ -70,7 +70,8 @@ export default function CategoriasPage() {
           <InteractiveEmbed
             src="/interactive/distribucion_categorias_vino.html"
             title="Distribución Interactiva de Categorías"
-            description="Explora la distribución de categorías de calidad de forma interactiva"
+            description="Explora la distribución de categorías de calidad de forma interactiva,
+            util para reconocer el balance de los datos."
             notebook="Fase_2.ipynb"
             section="Categorías"
           />

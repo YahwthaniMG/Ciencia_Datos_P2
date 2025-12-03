@@ -82,7 +82,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Relación entre el contenido de alcohol y la calidad del vino',
     filename: '01_scatter.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Visualizaciones Básicas'
   },
   {
@@ -91,7 +91,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Proporción de vinos por categoría de calidad',
     filename: '02_pie.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Exploratorio'
   },
   {
@@ -100,7 +100,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Evolución de métricas clave a lo largo del análisis',
     filename: '03_line.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Correlaciones'
   },
   {
@@ -109,7 +109,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Matriz de corRelación entre todas las variables fisicoquímicas',
     filename: '04_heatmap.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Correlaciones'
   },
   {
@@ -118,7 +118,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Distribución de vinos por categoría y subcategoría',
     filename: '05_barras_apiladas.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Categorías'
   },
   {
@@ -127,7 +127,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Las cocinas más populares en los maridajes',
     filename: '06_barras_horizontales.png',
     type: 'image',
-    notebook: 'analisis_maridajes.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Geográfico'
   },
   {
@@ -136,7 +136,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Distribución de frecuencias de variables clave',
     filename: '07_histograma.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Exploratorio'
   },
   {
@@ -145,7 +145,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Identificación de valores atípicos en variables fisicoquímicas',
     filename: '08_boxplot.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Exploratorio'
   },
   {
@@ -154,7 +154,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Distribución de variables según categoría de calidad',
     filename: '09_violin.png',
     type: 'image',
-    notebook: 'analisis_vinos.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis con Seaborn'
   },
   {
@@ -163,7 +163,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Evolución acumulada de métricas principales',
     filename: '10_area.png',
     type: 'image',
-    notebook: 'analisis_integrado.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Integrado'
   },
 
@@ -183,7 +183,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Matriz de gráficos de dispersión entre variables',
     filename: 'seaborn_pairplot.png',
     type: 'image',
-    notebook: 'analisis_seaborn.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis con Seaborn'
   },
   {
@@ -192,7 +192,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Análisis detallado de Relación entre dos variables',
     filename: 'seaborn_jointplot.png',
     type: 'image',
-    notebook: 'analisis_seaborn.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis con Seaborn'
   },
   {
@@ -201,7 +201,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Distribuciones detalladas con violin plots',
     filename: 'seaborn_violinplots.png',
     type: 'image',
-    notebook: 'analisis_seaborn.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis con Seaborn'
   },
   {
@@ -210,7 +210,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Visualización de variables categóricas',
     filename: 'seaborn_catplot.png',
     type: 'image',
-    notebook: 'analisis_seaborn.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis con Seaborn'
   },
 
@@ -221,7 +221,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Vista general de todas las métricas principales',
     filename: 'dashboard_completo_matplotlib.png',
     type: 'image',
-    notebook: 'dashboard.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Introducción'
   },
   {
@@ -230,7 +230,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Comparación entre Wine Quality y Wine Pairings',
     filename: 'analisis_comparativo_datasets.png',
     type: 'image',
-    notebook: 'analisis_integrado.ipynb',
+    notebook: 'Fase_2.5.ipynb',
     section: 'Análisis Integrado'
   },
 
@@ -241,7 +241,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Distribución geográfica interactiva de cocinas por región',
     filename: 'mapa_cuisines_mundial.html',
     type: 'interactive',
-    notebook: 'visualizaciones_interactivas.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Análisis Geográfico'
   },
   {
@@ -250,7 +250,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Análisis interactivo de distribución por regiones',
     filename: 'distribucion_regional.html',
     type: 'interactive',
-    notebook: 'visualizaciones_interactivas.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Análisis Geográfico'
   },
   {
@@ -259,7 +259,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Herramienta interactiva para recomendar vinos según preferencias',
     filename: 'sistema_recomendacion_interactivo.html',
     type: 'interactive',
-    notebook: 'sistema_recomendacion.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Sistema de Recomendación'
   },
   {
@@ -268,7 +268,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Visualización interactiva de comidas y sus variedades de vino',
     filename: 'top_comidas_variedad_vinos.html',
     type: 'interactive',
-    notebook: 'analisis_maridajes.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Sistema de Recomendación'
   },
   {
@@ -277,7 +277,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Gráfico interactivo de categorías de calidad',
     filename: 'distribucion_categorias_vino.html',
     type: 'interactive',
-    notebook: 'analisis_categorias.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Categorías'
   },
 
@@ -297,7 +297,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Scatter plot animado de alcohol y calidad',
     filename: 'animacion_scatter_alcohol_quality.html',
     type: 'interactive',
-    notebook: 'animaciones.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Animaciones'
   },
   {
@@ -306,7 +306,7 @@ export const graphs: GraphMetadata[] = [
     description: 'Evolución de cuisines según categorías de calidad',
     filename: 'animacion_cuisines_quality.html',
     type: 'interactive',
-    notebook: 'animaciones.ipynb',
+    notebook: 'Fase_2.ipynb',
     section: 'Animaciones'
   }
 ];

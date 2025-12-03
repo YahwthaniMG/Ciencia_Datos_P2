@@ -27,7 +27,7 @@ export default function AnimacionesPage() {
             description="Visualización animada de cómo varía la distribución de categorías de calidad"
             notebook="Fase_2.ipynb"
             section="Animaciones"
-            height="500px"
+            height="700px"
           />
         </section>
 
@@ -41,7 +41,7 @@ export default function AnimacionesPage() {
             description="Scatter plot animado mostrando la evolución de la relación entre alcohol y calidad"
             notebook="animaciones.ipynb"
             section="Animaciones"
-            height="500px"
+            height="700px"
           />
         </section>
 
@@ -55,7 +55,7 @@ export default function AnimacionesPage() {
             description="Evolución de las cocinas según categorías de calidad del vino"
             notebook="animaciones.ipynb"
             section="Animaciones"
-            height="700px"
+            height="750px"
           />
         </section>
 

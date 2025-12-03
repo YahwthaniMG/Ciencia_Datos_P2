@@ -44,10 +44,10 @@ export default function ConclusionesPage() {
                 </h3>
               </div>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>" El <strong className="text-foreground">alcohol</strong> es el predictor más fuerte de calidad (r = 0.48)</li>
-                <li>" La <strong className="text-foreground">acidez volátil</strong> tiene impacto negativo significativo</li>
-                <li>" Los <strong className="text-foreground">sulfatos</strong> contribuyen positivamente a la percepción de calidad</li>
-                <li>" El <strong className="text-foreground">Ácido cítrico</strong> mejora la frescura y balance</li>
+                <li> <span className="text-primary font-semibold">°</span> El <strong className="text-foreground">alcohol</strong> es el predictor más fuerte de calidad (r = 0.48)</li>
+                <li> <span className="text-primary font-semibold">°</span> La <strong className="text-foreground">acidez volátil</strong> tiene impacto negativo significativo</li>
+                <li> <span className="text-primary font-semibold">°</span> Los <strong className="text-foreground">sulfatos</strong> contribuyen positivamente a la percepción de calidad</li>
+                <li> <span className="text-primary font-semibold">°</span> El <strong className="text-foreground">Ácido cítrico</strong> mejora la frescura y balance</li>
               </ul>
             </div>
 
@@ -59,10 +59,10 @@ export default function ConclusionesPage() {
                 </h3>
               </div>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>" Cocinas <strong className="text-foreground">europeas</strong> dominan en número de maridajes documentados</li>
-                <li>" Alta <strong className="text-foreground">diversidad regional</strong> en preferencias de maridaje</li>
-                <li>" Ciertas comidas admiten <strong className="text-foreground">amplia variedad</strong> de vinos</li>
-                <li>" Tendencia hacia maridajes <strong className="text-foreground">innovadores</strong> en cocinas asiáticas</li>
+                <li> <span className="text-primary font-semibold">°</span> Cocinas <strong className="text-foreground">asiaticas y europeas </strong> dominan en número de maridajes documentados</li>
+                <li> <span className="text-primary font-semibold">°</span> Alta <strong className="text-foreground">diversidad regional</strong> en preferencias de maridaje</li>
+                <li> <span className="text-primary font-semibold">°</span> Ciertas comidas admiten <strong className="text-foreground">amplia variedad</strong> de vinos</li>
+                <li> <span className="text-primary font-semibold">°</span> Tendencia hacia maridajes <strong className="text-foreground">innovadores</strong> en cocinas asiáticas</li>
               </ul>
             </div>
 
@@ -74,10 +74,10 @@ export default function ConclusionesPage() {
                 </h3>
               </div>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>" La mayoría de vinos se concentra en <strong className="text-foreground">calidad media</strong> (5-6)</li>
-                <li>" Pocos vinos alcanzan <strong className="text-foreground">excelencia</strong> (8+)</li>
-                <li>" Distribución aproximadamente <strong className="text-foreground">normal</strong></li>
-                <li>" Outliers representan <strong className="text-foreground">menos del 5%</strong></li>
+                <li> <span className="text-primary font-semibold">°</span> La mayoría de vinos se concentra en <strong className="text-foreground">calidad media</strong> (3)</li>
+                <li> <span className="text-primary font-semibold">°</span> Pocos vinos alcanzan <strong className="text-foreground">excelencia</strong> (5)</li>
+                <li> <span className="text-primary font-semibold">°</span> Distribución aproximadamente <strong className="text-foreground">normal</strong></li>
+                <li> <span className="text-primary font-semibold">°</span> Outliers representan <strong className="text-foreground">menos del 5%</strong></li>
               </ul>
             </div>
 
@@ -89,10 +89,10 @@ export default function ConclusionesPage() {
                 </h3>
               </div>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>" <strong className="text-foreground">pH y acidez fija:</strong> correlación negativa fuerte (-0.68)</li>
-                <li>" <strong className="text-foreground">Densidad y alcohol:</strong> relación inversa clara (-0.50)</li>
-                <li>" <strong className="text-foreground">Acidez fija y cítrica:</strong> correlación positiva (0.67)</li>
-                <li>" <strong className="text-foreground">Variables independientes:</strong> sulfatos y cloruros</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">pH y acidez fija:</strong> correlación negativa fuerte (-0.68)</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Densidad y alcohol:</strong> relación inversa clara (-0.50)</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Acidez fija y cítrica:</strong> correlación positiva (0.67)</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Variables independientes:</strong> sulfatos y cloruros</li>
               </ul>
             </div>
           </div>
@@ -117,9 +117,9 @@ export default function ConclusionesPage() {
                 para optimizar la calidad final del producto.
               </p>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>" Controlar la acidez volátil durante la fermentación</li>
-                <li>" Optimizar el contenido de alcohol sin comprometer el balance</li>
-                <li>" Ajustar niveles de sulfatos para mejor conservación</li>
+                <li> <span className="text-primary font-semibold">°</span> Controlar la acidez volátil durante la fermentación</li>
+                <li> <span className="text-primary font-semibold">°</span> Optimizar el contenido de alcohol sin comprometer el balance</li>
+                <li> <span className="text-primary font-semibold">°</span> Ajustar niveles de sulfatos para mejor conservación</li>
               </ul>
             </div>
 
@@ -132,9 +132,9 @@ export default function ConclusionesPage() {
                 para sugerencias de vino más precisas.
               </p>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>" Maridajes basados en datos reales de 34,000+ combinaciones</li>
-                <li>" Recomendaciones personalizadas según cocina y preferencias</li>
-                <li>" Identificación de combinaciones innovadoras</li>
+                <li> <span className="text-primary font-semibold">°</span> Maridajes basados en datos reales de 34,000+ combinaciones</li>
+                <li> <span className="text-primary font-semibold">°</span> Recomendaciones personalizadas según cocina y preferencias</li>
+                <li> <span className="text-primary font-semibold">°</span> Identificación de combinaciones innovadoras</li>
               </ul>
             </div>
 
@@ -147,9 +147,9 @@ export default function ConclusionesPage() {
                 y ocasiones específicas.
               </p>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>" Sistema de recomendación intuitivo y accesible</li>
-                <li>" Comprensión de factores que determinan la calidad</li>
-                <li>" Exploración de nuevas combinaciones gastronómicas</li>
+                <li> <span className="text-primary font-semibold">°</span> Sistema de recomendación intuitivo y accesible</li>
+                <li> <span className="text-primary font-semibold">°</span> Comprensión de factores que determinan la calidad</li>
+                <li> <span className="text-primary font-semibold">°</span> Exploración de nuevas combinaciones gastronómicas</li>
               </ul>
             </div>
           </div>
