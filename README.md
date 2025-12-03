@@ -64,7 +64,7 @@ proyecto-vinos/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/TU_USUARIO/proyecto-vinos.git
+git clone https://github.com/YahwthaniMG/Ciencia_Datos_P2.git
 cd proyecto-vinos
 
 # Instalar dependencias
@@ -76,14 +76,6 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-### Agregar Visualizaciones
-
-Antes de ejecutar, asegúrate de tener los archivos de visualización:
-
-1. **Imágenes PNG**: Coloca los 17 archivos PNG en `public/images/`
-2. **HTML Interactivos**: Coloca los 11 archivos HTML en `public/interactive/`
-
-Ver [DEPLOYMENT.md](DEPLOYMENT.md) para lista completa de archivos requeridos.
 
 ## 📚 Secciones del Análisis
 
@@ -163,16 +155,12 @@ Ver [DEPLOYMENT.md](DEPLOYMENT.md) para lista completa de archivos requeridos.
 - **Seaborn** - Visualización estadística
 - **Plotly** - Interactividad
 
-### Deployment
-- **Vercel** - Hosting y CI/CD
-- **Git** - Control de versiones
 
 ## 🎯 Datasets
 
 ### Wine Quality Red
 - **Registros**: 1,599 vinos tintos portugueses
 - **Variables**: 12 (11 fisicoquímicas + calidad)
-- **Origen**: UCI Machine Learning Repository
 
 ### Wine Food Pairings
 - **Registros**: 34,933 maridajes
@@ -230,27 +218,20 @@ npm run lint
 Este proyecto está bajo la Licencia MIT. Ver archivo `LICENSE` para más detalles.
 
 ## 👥 Autor
-
-**Proyecto de Ciencia de Datos**
-Universidad - 2024
+Yahwthani Morales Gómez
+**Proyecto de Herramientas de Ciencia de Datos**
+Universidad Panamericana - 2025
 
 ## 🙏 Agradecimientos
 
-- UCI Machine Learning Repository por el dataset Wine Quality
 - Comunidad de Kaggle por el dataset Wine Pairings
 - Vercel por el hosting gratuito
 - Next.js team por el framework
 
-## 📞 Soporte
-
-Para reportar bugs o sugerir mejoras:
-- Abre un issue en GitHub
-- Consulta [DEPLOYMENT.md](DEPLOYMENT.md) para problemas de deployment
-- Revisa la documentación de Next.js
 
 ## 🔗 Enlaces Útiles
 
-- [Demo en vivo](https://TU_PROYECTO.vercel.app) (después del deployment)
+- [Demo en vivo](https://ciencia-datos-p2.vercel.app/)
 - [Documentación de Next.js](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [Vercel](https://vercel.com/docs)
