@@ -213,12 +213,9 @@ npm start
 npm run lint
 ```
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver archivo `LICENSE` para más detalles.
-
 ## 👥 Autor
 Yahwthani Morales Gómez
+\
 **Proyecto de Herramientas de Ciencia de Datos**
 Universidad Panamericana - 2025
 
