@@ -87,7 +87,7 @@ export const graphs: GraphMetadata[] = [
   },
   {
     id: 'pie-quality',
-    title: 'Distribución de Calidad',
+    title: 'Distribución de Calidad XD',
     description: 'Proporción de vinos por categoría de calidad',
     filename: '02_pie.png',
     type: 'image',
