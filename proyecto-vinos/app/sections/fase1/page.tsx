@@ -233,7 +233,7 @@ export default function Fase1Page() {
             alt="Gráfico de dispersión alcohol vs calidad"
             title="Gráfico de Dispersión: Alcohol vs Calidad"
             description="Relación entre el contenido de alcohol y la calificación de calidad del vino"
-            notebook="analisis_vinos.ipynb"
+            notebook="Fase_2.5.ipynb"
             section="Visualizaciones básicas"
           />
 

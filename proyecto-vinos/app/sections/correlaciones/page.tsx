@@ -99,7 +99,7 @@ export default function CorrelacionesPage() {
             description="Tendencias de variables principales a lo largo del análisis,
             encontrando que el nivel de alcochol aumenta con la calidad y los sulfuros disminuyen 
             debido a que estos opacan sabores."
-            notebook="analisis_vinos.ipynb"
+            notebook="Fase_1.ipynb"
             section="Correlaciones"
           />
         </section>

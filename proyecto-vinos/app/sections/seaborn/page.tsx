@@ -68,7 +68,7 @@ export default function SeabornPage() {
               description="Distribución de variables fisicoquímicas según categoría de calidad, 
               mostrando que los acidos volatiles disminuyen al aumentar la calidad, mientras que 
               los acidos citricos aumentan."
-              notebook="analisis_seaborn.ipynb"
+              notebook="Fase_2.5.ipynb"
               section="Análisis con Seaborn"
             />
             <ImageViewer
@@ -77,7 +77,7 @@ export default function SeabornPage() {
               title="Violin Plot: Distribución por Calidad"
               description="Visualización de la distribución de variables principales, permite
               observar que en todas las categorias de vinos, la mayor parte tiene calidad media."
-              notebook="analisis_vinos.ipynb"
+              notebook="Fase_2.5.ipynb"
               section="Análisis con Seaborn"
             />
           </div>

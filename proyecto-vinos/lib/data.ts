@@ -77,162 +77,304 @@ export const navigation: NavigationItem[] = [
 export const graphs: GraphMetadata[] = [
   // Gráficas PNG
   {
-    id: 'scatter-basic',
-    title: 'Gráfico de Dispersión: Alcohol vs Calidad',
-    description: 'Relación entre el contenido de alcohol y la calidad del vino',
-    filename: '01_scatter.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Visualizaciones Básicas'
-  },
-  {
-    id: 'pie-quality',
-    title: 'Distribución de Calidad XD',
-    description: 'Proporción de vinos por categoría de calidad',
-    filename: '02_pie.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Exploratorio'
-  },
-  {
-    id: 'line-trends',
-    title: 'Tendencias Temporales',
-    description: 'Evolución de métricas clave a lo largo del análisis',
-    filename: '03_line.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Correlaciones'
-  },
-  {
-    id: 'heatmap-correlations',
-    title: 'Mapa de Calor de Correlaciones',
-    description: 'Matriz de corRelación entre todas las variables fisicoquímicas',
-    filename: '04_heatmap.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Correlaciones'
-  },
-  {
-    id: 'stacked-bars',
-    title: 'Barras Apiladas: Categorías',
-    description: 'Distribución de vinos por categoría y subcategoría',
-    filename: '05_barras_apiladas.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Categorías'
-  },
-  {
-    id: 'horizontal-bars',
-    title: 'Barras Horizontales: Top Cuisines',
-    description: 'Las cocinas más populares en los maridajes',
-    filename: '06_barras_horizontales.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Geográfico'
-  },
-  {
-    id: 'histogram-distribution',
-    title: 'Histograma de Distribuciones',
-    description: 'Distribución de frecuencias de variables clave',
-    filename: '07_histograma.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Exploratorio'
-  },
-  {
-    id: 'boxplot-outliers',
-    title: 'Boxplot: Detección de Outliers',
-    description: 'Identificación de valores atípicos en variables fisicoquímicas',
-    filename: '08_boxplot.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Exploratorio'
-  },
-  {
-    id: 'violin-plot',
-    title: 'Violin Plot: Distribución por Calidad',
-    description: 'Distribución de variables según categoría de calidad',
-    filename: '09_violin.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-  {
-    id: 'area-chart',
-    title: 'Gráfico de área: Evolución Acumulada',
-    description: 'Evolución acumulada de métricas principales',
-    filename: '10_area.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Integrado'
-  },
-
-  // Gráficas adicionales de Seaborn
-  {
-    id: 'seaborn-heatmap',
-    title: 'Seaborn Heatmap: Correlaciones Mejoradas',
-    description: 'Mapa de calor estilizado con Seaborn',
-    filename: 'seaborn_heatmap.png',
-    type: 'image',
-    notebook: 'analisis_seaborn.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-  {
-    id: 'seaborn-pairplot',
-    title: 'Pairplot: Relaciones Multivariadas',
-    description: 'Matriz de gráficos de dispersión entre variables',
-    filename: 'seaborn_pairplot.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-  {
-    id: 'seaborn-jointplot',
-    title: 'Jointplot: Relación Bivariada',
-    description: 'Análisis detallado de Relación entre dos variables',
-    filename: 'seaborn_jointplot.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-  {
-    id: 'seaborn-violinplot',
-    title: 'Seaborn Violinplot',
-    description: 'Distribuciones detalladas con violin plots',
-    filename: 'seaborn_violinplots.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-  {
-    id: 'seaborn-catplot',
-    title: 'Catplot: Análisis Categórico',
-    description: 'Visualización de variables categóricas',
-    filename: 'seaborn_catplot.png',
-    type: 'image',
-    notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis con Seaborn'
-  },
-
-  // Gráficas de análisis integrado
-  {
-    id: 'dashboard-completo',
-    title: 'Dashboard Completo',
-    description: 'Vista general de todas las métricas principales',
+    id: 'dashboard_completo',
+    title: 'Dashboard Completo de Análisis',
+    description: 'Vista general de las visualizaciones y métricas principales del proyecto',
     filename: 'dashboard_completo_matplotlib.png',
     type: 'image',
     notebook: 'Fase_2.5.ipynb',
     section: 'Introducción'
   },
   {
-    id: 'analisis-comparativo',
-    title: 'Análisis Comparativo de Datasets',
-    description: 'Comparación entre Wine Quality y Wine Pairings',
+    id: '02_pie',
+    title: 'Distribución de Categorías de Calidad',
+    description: 'Gráfico de pastel mostrando la proporción de vinos en cada categoría de calidad',
+    filename: '02_pie.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: '07_histograma',
+    title: 'Histogramas de Distribución Alcohol',
+    description: 'Distribución de frecuencias del alcohol en los vinos',
+    filename: '07_histograma.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'chlorides',
+    title: 'Histogramas de Distribución Cloruros',
+    description: 'Distribución de frecuencias de los cloruros en los vinos',
+    filename: 'chlorides.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'citric acid',
+    title: 'Histogramas de Distribución Acidos Citricos',
+    description: 'Distribución de frecuencias de los acidos citricos en los vinos',
+    filename: 'citric acid.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'density',
+    title: 'Histogramas de Distribución Densidad',
+    description: 'Distribución de frecuencias de la densidad en los vinos',
+    filename: 'density.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'fixed acidity',
+    title: 'Histogramas de Distribución Acidez Fija',
+    description: 'Distribución de frecuencias de la Acidez Fija en los vinos',
+    filename: 'fixed acidity.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'free sulfur dioxide',
+    title: 'Histogramas de Distribución Dióxido de Azufre Libre',
+    description: 'Distribución de frecuencias del Dióxido de Azufre Libre en los vinos',
+    filename: 'free sulfur dioxide.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'pH',
+    title: 'Histogramas de Distribución pH',
+    description: 'Distribución de frecuencias del pH en los vinos',
+    filename: 'pH.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'residual sugar',
+    title: 'Histogramas de Distribución Azúcar Residual',
+    description: 'Distribución de frecuencias del Azúcar Residual en los vinos',
+    filename: 'residual sugar.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'sulphates',
+    title: 'Histogramas de Distribución Sulfatos',
+    description: 'Distribución de frecuencias de los sulfatos en los vinos',
+    filename: 'sulphates.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'total sulfur dioxide',
+    title: 'Histogramas de Distribución Dióxido de Azufre Total',
+    description: 'Distribución de frecuencias del dióxido de azufre total en los vinos',
+    filename: 'total sulfur dioxide.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'volatile acidity',
+    title: 'Histogramas de Distribución Acidez Volátil',
+    description: 'Distribución de frecuencias de la acidez volátil total en los vinos',
+    filename: 'volatile acidity.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'outliers_residual sugar',
+    title: 'Boxplot de Azúcar Residual',
+    description: 'Identificación de valores atípicos en azúcar residual respecto la calidad, mediante diagramas de caja',
+    filename: 'outliers_residual sugar.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'outliers_chlorides',
+    title: 'Boxplot de Cloruros',
+    description: 'Identificación de valores atípicos en cloruros respecto la calidad, mediante diagramas de caja',
+    filename: 'outliers_chlorides.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'outliers_total sulfur dioxide',
+    title: 'Boxplot de Azufre Total',
+    description: 'Identificación de valores atípicos en azufre total respecto la calidad, mediante diagramas de caja',
+    filename: 'outliers_total sulfur dioxide.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: '08_boxplot',
+    title: 'Boxplot de Alcohol',
+    description: 'Identificación de valores atípicos en alcohol respecto la calidad, mediante diagramas de caja',
+    filename: '08_boxplot.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: '01_scatter',
+    title: 'Gráfico de Dispersión: Alcohol vs Calidad',
+    description: 'Relación entre el contenido de alcohol y la calificación de calidad del vino',
+    filename: '01_scatter.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Visualizaciones básicas'
+  },
+  {
+    id: 'distribucion',
+    title: 'Distribución de la calidad del maridaje',
+    description: 'Gráfico de barras mostrando la calidad del maridaje',
+    filename: 'distribucion.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'barplot_wine_category',
+    title: 'Distribución de los vinos evaluados',
+    description: 'Gráfico de barras mostrando todos los tipos de vinos evaluados',
+    filename: 'barplot_wine_category.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'barplot_cuisine',
+    title: 'Distribución del Top 5 cocinas más evaluadas',
+    description: 'Gráfico de barras mostrando las 5 cocinas más evaluadas en el maridaje',
+    filename: 'barplot_cuisine.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'barplot_food_category',
+    title: 'Distribución del Top 5 categorias de alimentos más evaluados',
+    description: 'Gráfico de barras mostrando el Top 5 categorias de alimentos más evaluados',
+    filename: 'barplot_food_category.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Análisis Exploratorio'
+  },
+  {
+    id: 'correlacion',
+    title: 'Mapa de Calor de Correlaciones',
+    description: 'Matriz completa de correlaciones entre variables fisicoquímicas',
+    filename: 'correlacion.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Correlaciones'
+  },
+  {
+    id: 'correlaciones',
+    title: 'Grafica de correlaciones mas fuertes',
+    description: 'Visualización de las correlaciones mas fuertes de forma absoluta',
+    filename: 'correlaciones.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Correlaciones'
+  },
+  {
+    id: '03_line',
+    title: 'Evolución de Métricas Clave',
+    description: 'Tendencias de variables principales a lo largo del análisis',
+    filename: '03_line.png',
+    type: 'image',
+    notebook: 'Fase_1.ipynb',
+    section: 'Correlaciones'
+  },
+  {
+    id: 'seaborn_pairplot',
+    title: 'Matriz de Gráficos de Dispersión',
+    description: 'Visualización completa de relaciones entre variables principales',
+    filename: 'seaborn_pairplot.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: 'seaborn_jointplot',
+    title: 'Análisis Bivariado con Distribuciones Marginales',
+    description: 'Relación detallada entre alcohol y calidad con distribuciones',
+    filename: 'seaborn_jointplot.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: 'seaborn_violinplots',
+    title: 'Violin Plots de Variables por Calidad',
+    description: 'Distribución de variables fisicoquímicas según categoría de calidad',
+    filename: 'seaborn_violinplots.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: '09_violin',
+    title: 'Violin Plots de Variables por Calidad',
+    description: 'Visualización de la distribución de variables principales',
+    filename: '09_violin.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: '06_barras_horizontales',
+    title: 'Cocinas Más Populares',
+    description: 'Top 10 cocinas con mayor número de maridajes registrados',
+    filename: '06_barras_horizontales.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: '05_barras_apiladas',
+    title: 'Distribución de Vinos por Categoría',
+    description: 'Visualización de barras apiladas mostrando la proporción de vinos en cada categoría',
+    filename: '05_barras_apiladas.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+  {
+    id: 'analisis_comparativo_datasets',
+    title: 'Comparación Entre Wine Quality y Wine Pairings',
+    description: 'Visualización lado a lado de las características principales de ambos datasets.',
     filename: 'analisis_comparativo_datasets.png',
     type: 'image',
     notebook: 'Fase_2.5.ipynb',
-    section: 'Análisis Integrado'
+    section: 'Análisis con Seaborn'
   },
+  {
+    id: '10_area',
+    title: 'Evolución Acumulada de Variables Principales',
+    description: 'Análisis temporal de la evolución de métricas clave',
+    filename: '10_area.png',
+    type: 'image',
+    notebook: 'Fase_2.5.ipynb',
+    section: 'Análisis con Seaborn'
+  },
+
+
 
   // Visualizaciones interactivas (HTML)
   {

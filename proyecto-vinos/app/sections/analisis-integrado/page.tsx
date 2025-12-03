@@ -76,7 +76,7 @@ export default function AnalisisIntegradoPage() {
             alt="Gráfico de área"
             title="Evolución Acumulada de Variables Principales"
             description="Análisis temporal de la evolución de métricas clave"
-            notebook="analisis_integrado.ipynb"
+            notebook="Fase_2.5.ipynb"
             section="Análisis Integrado"
           />
         </section>

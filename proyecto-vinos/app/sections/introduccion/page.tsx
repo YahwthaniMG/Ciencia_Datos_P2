@@ -206,7 +206,7 @@ export default function IntroduccionPage() {
             alt="Dashboard completo del proyecto"
             title="Dashboard Completo de Análisis"
             description="Vista general de las visualizaciones y métricas principales del proyecto"
-            notebook="dashboard.ipynb"
+            notebook="Fase_2.5.ipynb"
             section="Introducción"
             priority
           />
