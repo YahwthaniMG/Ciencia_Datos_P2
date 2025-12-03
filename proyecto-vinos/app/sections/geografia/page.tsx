@@ -56,7 +56,8 @@ export default function GeografiaPage() {
             src="/images/06_barras_horizontales.png"
             alt="Top cuisines"
             title="Cocinas Más Populares"
-            description="Top 10 cocinas con mayor número de maridajes registrados"
+            description="Top 10 cocinas con mayor número de maridajes registrados, demostrando
+            la diversidad de estilos culinarios."
             notebook="Fase_2.5.ipynb"
             section="Análisis Geográfico"
           />
