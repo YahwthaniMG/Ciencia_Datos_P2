@@ -90,7 +90,7 @@ export default function RecomendacionPage() {
             <div className="p-6 bg-card border border-l-4 border-l-secondary rounded-lg">
               <h4 className="font-semibold text-lg text-foreground mb-3">Combinaciones Innovadoras</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>° <strong className="text-foreground">Sushi:</strong> Riesling, Albariño</li>
+                <li> <span className="text-primary font-semibold">°</span> <strong className="text-foreground">Sushi:</strong> Riesling, Albariño</li>
                 <li>° <strong className="text-foreground">Tacos:</strong> Tempranillo, Garnacha</li>
                 <li>° <strong className="text-foreground">Curry:</strong> Gewürztraminer, Viognier</li>
                 <li>° <strong className="text-foreground">BBQ:</strong> Zinfandel, Syrah</li>

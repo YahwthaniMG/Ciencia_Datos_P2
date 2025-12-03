@@ -41,7 +41,7 @@ export default function AnimacionesPage() {
             description="Scatter plot animado mostrando la evolución de la relación entre alcohol y calidad"
             notebook="animaciones.ipynb"
             section="Animaciones"
-            height="700px"
+            height="500px"
           />
         </section>
 
@@ -70,19 +70,19 @@ export default function AnimacionesPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div className="flex gap-2">
-              <span className="text-primary font-semibold"></span>
+              <span className="text-primary font-semibold">°</span>
               <span className="text-foreground">Identificación de tendencias temporales</span>
             </div>
             <div className="flex gap-2">
-              <span className="text-primary font-semibold"></span>
+              <span className="text-primary font-semibold">°</span>
               <span className="text-foreground">Detección de patrones cíclicos</span>
             </div>
             <div className="flex gap-2">
-              <span className="text-primary font-semibold"></span>
+              <span className="text-primary font-semibold">°</span>
               <span className="text-foreground">Visualización de cambios graduales</span>
             </div>
             <div className="flex gap-2">
-              <span className="text-primary font-semibold"></span>
+              <span className="text-primary font-semibold">°</span>
               <span className="text-foreground">Mejor comprensión de datos multidimensionales</span>
             </div>
           </div>
