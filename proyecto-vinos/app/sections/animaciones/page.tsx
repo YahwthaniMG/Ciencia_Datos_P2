@@ -25,9 +25,9 @@ export default function AnimacionesPage() {
             src="/interactive/animacion_distribucion_calidad.html"
             title="Animación: Distribución de Calidad"
             description="Visualización animada de cómo varía la distribución de categorías de calidad"
-            notebook="animaciones.ipynb"
+            notebook="Fase_2.ipynb"
             section="Animaciones"
-            height="650px"
+            height="500px"
           />
         </section>
 
