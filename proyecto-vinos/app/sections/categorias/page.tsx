@@ -58,7 +58,7 @@ export default function CategoriasPage() {
             alt="Barras apiladas de categorías"
             title="Distribución de Vinos por Categoría"
             description="Visualización de barras apiladas mostrando la proporción de vinos en cada categoría"
-            notebook="analisis_vinos.ipynb"
+            notebook="Fase_2.5.ipynb"
             section="Categorías"
           />
         </section>
@@ -71,7 +71,7 @@ export default function CategoriasPage() {
             src="/interactive/distribucion_categorias_vino.html"
             title="Distribución Interactiva de Categorías"
             description="Explora la distribución de categorías de calidad de forma interactiva"
-            notebook="analisis_categorias.ipynb"
+            notebook="Fase_2.ipynb"
             section="Categorías"
           />
         </section>
@@ -83,7 +83,7 @@ export default function CategoriasPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-card border border-border rounded-lg">
               <h4 className="font-semibold text-lg text-foreground mb-4">
-                Características de Vinos de Alta Calidad (7-8)
+                Características de Vinos de Alta Calidad (4-5)
               </h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
                 <li className="flex gap-2">
@@ -107,7 +107,7 @@ export default function CategoriasPage() {
 
             <div className="p-6 bg-card border border-border rounded-lg">
               <h4 className="font-semibold text-lg text-foreground mb-4">
-                Características de Vinos de Calidad Media (5-6)
+                Características de Vinos de Calidad Media (3-4)
               </h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
                 <li className="flex gap-2">
