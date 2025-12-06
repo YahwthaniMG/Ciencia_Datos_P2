@@ -211,13 +211,19 @@ export default function ConclusionesPage() {
             <p className="text-sm text-muted-foreground">
               Proyecto de Ciencia de Datos - Universidad Panamericana 2025<br></br>
               Yahwthani Morales Gómez
-              <a href="https://github.com/YahwthaniMG/Ciencia_Datos_P2" target="_blank" rel="noopener noreferrer">
-                GitHub
+            </p>
+            <p className="text-sm">
+            <a 
+                  href="https://github.com/YahwthaniMG/Ciencia_Datos_P2" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium" // Agregamos clases para que se vea como un enlace
+              >
+                GitHub del Proyecto
               </a>
             </p>
           </div>
         </section>
-
         <SectionNav />
       </div>
     </div>
