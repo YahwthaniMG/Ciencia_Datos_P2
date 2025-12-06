@@ -219,7 +219,7 @@ export default function ConclusionesPage() {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium" // Agregamos clases para que se vea como un enlace
               >
-                GitHub del Proyecto
+                GitHub
               </a>
             </p>
           </div>
