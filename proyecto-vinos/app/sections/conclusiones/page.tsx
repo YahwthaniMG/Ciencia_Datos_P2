@@ -1,5 +1,6 @@
 import DataTable from '@/components/DataTable';
 import SectionNav from '@/components/SectionNav';
+import Link from 'next/link';
 import { graphs, technologies } from '@/lib/data';
 import { CheckCircle2, TrendingUp, Users, Lightbulb } from 'lucide-react';
 
@@ -210,6 +211,9 @@ export default function ConclusionesPage() {
             <p className="text-sm text-muted-foreground">
               Proyecto de Ciencia de Datos - Universidad Panamericana 2025<br></br>
               Yahwthani Morales Gómez
+              <a href="https://github.com/YahwthaniMG/Ciencia_Datos_P2" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </p>
           </div>
         </section>
